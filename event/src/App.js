@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
-import CartData from "./components/cart/example";
+import CartData from "./components/cart/CartData";
 import Games from "./components/games/Games";
 import LoginForm from "./components/LoginForm";
 import SignupForm from "./components/SignupForm";

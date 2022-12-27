@@ -7,7 +7,9 @@ function Games() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:8080/games");
+      const response = await fetch(
+        "https://real-teal-armadillo-boot.cyclic.app/api/games"
+      );
       const json = await response.json();
       setData(json);
     }
@@ -17,7 +19,7 @@ function Games() {
 
   function addToCart(product) {
     const data = JSON.stringify(product);
-    fetch("http://localhost:8080/cart", {
+    fetch("https://real-teal-armadillo-boot.cyclic.app/api/cart", {
       method: "POST",
       headers: {
         "content-Type": "application/json",
