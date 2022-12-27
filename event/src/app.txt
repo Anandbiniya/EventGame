@@ -1,0 +1,30 @@
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import CartData from "./components/example";
+import Games from "./components/Games";
+import LoginForm from "./components/LoginForm";
+import SignupForm from "./components/SignupForm";
+
+function App() {
+  return (
+    <div className="App">
+      <nav>
+        <div>Home</div>
+        <div>Cart</div> <div>Login</div>
+        <div>signup</div>
+      </nav>
+      <Routes>
+        <Route path="/signup" element={<SignupForm />}>
+          Sign Up
+        </Route>
+        <Route path="/login" element={<LoginForm />}>
+          Login
+        </Route>
+        <Route path="/games" element={<Games />} />
+        <Route path="/cart" element={<CartData />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;

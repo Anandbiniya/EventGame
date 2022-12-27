@@ -1,0 +1,51 @@
+.container_child {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container_child > div {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.images {
+  width: 500px;
+  height: auto;
+}
+
+form {
+  display: flex;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input,
+input,
+input,
+select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+input {
+  margin: 0 10px;
+}
+
+.cart-item-btn {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+.container_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.container_box > div {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container_box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container_box h4 {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 10px 0;
+}
+
+.container_box p {
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  color: #777;
+  margin: 10px 0;
+}
+
+.AddCart {
+  font-size: 14px;
+  font-family: "Courier New", monospace;
+  color: #fff;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 0;
+}
+.RemoveCart {
+  font-size: 14px;
+  font-family: "Courier New", monospace;
+  color: #fff;
+  background: linear-gradient(to right, #de1d12, #c3704a);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 0;
+}
+
+.container_box button:hover {
+  background: linear-gradient(to right, #43a047, #7cb342);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.container_box button:active {
+  transform: translateY(2px);
+}
