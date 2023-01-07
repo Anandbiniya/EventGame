@@ -72,6 +72,7 @@ export default function SignupForm() {
   });
 
   const handleChange = (event) => {
+    //event preventDefault need to learn
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
@@ -100,7 +101,7 @@ export default function SignupForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <label>
         Email:
         <input type="email" name="email" onChange={handleChange} required />
@@ -116,7 +117,7 @@ export default function SignupForm() {
         />
       </label>
       <br />
-      <button type="submit">Sign Up</button>
+      <button onClick={handleSubmit}>Sign Up</button>
     </form>
   );
 }
